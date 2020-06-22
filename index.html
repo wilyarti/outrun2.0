@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Wilyarti Howard</title>
+  <meta name="author" content="Wilyarti Howard"/>
+  <meta name="description" content="fullpage.js portfolio"/>
+  <meta name="keywords" content="fullpage,jquery,demo,scroll,loop,continuous"/>
+  <meta name="Resource-type" content="Document"/>
+
+
+  <link rel="stylesheet" type="text/css" href="css/fullpage.css"/>
+  <link rel="stylesheet" type="text/css" href="css/menu.css"/>
+  <link rel="stylesheet" type="text/css" href="css/outrun.css"/>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+  <!--[if IE]>
+  <script type="text/javascript">
+    var console = {
+      log: function () {
+      }
+    };
+  </script>
+  <![endif]-->
+</head>
+<body onload="outrun()">
+<div class="overlay"></div>
+<div id="fullpage">
+  <div id="containerTerminal" class="section outrun" id="section0">
+    <img class="sun" width="200px" src="img/sun.svg"/>
+    <div>
+      <div class="audiowide name">Wilyarti Howard</div>
+      <div id="terminal" class=" terminal audiowide">
+        <div class="control">
+          <span class="hidden"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section active outrun" id="section1">
+    <div class="slide" id="slide1">
+      <div class="intro">
+        <div class="audiowide name">Air Monitor</div>
+        <img class="projectImage" src="img/project1.jpg"/>
+        <div class="projectDescription audiowide">
+          Air Monitor is a ESP32 micro-controller powered VOC (Volatile Organic Compound) and CO2 monitor.<p/>
+          It graphs the CO2 and VOC on an LCD over various intervals.<p/>
+          A custom app allows the data to be graphed on your Android device.
+        </div>
+      </div>
+    </div>
+    <div class="slide active" id="slide2">
+      <div class="intro">
+        <div class="audiowide name">WiFi/LoRaWAN Weather Station</div>
+        <img class="projectImage" src="img/project2.jpg"/>
+        <div class="projectDescription audiowide">
+          I built several weather stations using ESP8266 and ESP32 micro-controllers.<p/>
+          Features:
+          <ul>
+            <li>Temperature/Humidity/Pressures</li>
+            <li>Battery Voltage Monitoring</li>
+            <li>Rain Measurement</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="slide" id="slide3">
+      <div class="intro">
+        <div class="audiowide name">IOT Clock</div>
+        <img class="projectImage" src="img/project3.jpg"/>
+        <div class="projectDescription audiowide">
+          I build a simple Dot Matrix clock which uses NTP via UDP sockets to get the time.
+          <p/>Built using an ESP8266. I also designed and printed the case.
+        </div>
+      </div>
+    </div>
+    <div class="slide" id="slide4">
+      <div class="intro">
+        <div class="audiowide name"></div>
+        <img class="projectImage" src="img/project4.jpg"/>
+        <div class="projectDescription audiowide">
+          I build a simple Dot Matrix clock which uses NTP via UDP sockets to get the time.
+          <p/>Built using an ESP8266. I also designed and printed the case.
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="section" id="section2">
+    <div class="intro">
+      <h1>Section 3</h1>
+    </div>
+  </div>
+</div>
+<ul id="menu" class="audiowide">
+  <li data-menuanchor="who" class="active"><a href="#who">
+    <span class="binary">00</span>
+    Who
+  </a></li>
+  <li data-menuanchor="projects"><a href="#projects">
+    <span class="binary">01</span>
+    Projects
+  </a></li>
+  <li data-menuanchor="resume"><a href="#resume">
+    <span class="binary">10</span>
+    Resume
+  </a></li>
+</ul>
+
+<script type="text/javascript" src="js/outrun.js"></script>
+<script type="text/javascript" src="js/fullpage.js"></script>
+<script type="text/javascript">
+  var myFullpage = new fullpage('#fullpage', {
+    sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+    anchors: ['who', 'projects', 'resume', '4thpage', 'lastPage'],
+    menu: '#menu',
+    lazyLoad: true
+  });
+</script>
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+  window.ga = function () {
+    ga.q.push(arguments)
+  };
+  ga.q = [];
+  ga.l = +new Date;
+  ga('create', ' UA-168229225-1', 'auto');
+  ga('set', 'transport', 'beacon');
+  ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+</html>

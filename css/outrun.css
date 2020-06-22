@@ -1,0 +1,102 @@
+.outrun {
+  background: #070829;
+  background: linear-gradient(#070829 0%, #05092b 24%, #08092b 25%, #08092d 30%, #050a2b 32%, #070a2e 35%, #080e31 56%, #090f35 62%, #080f32 63%, #0b1036 64%, #0b0f36 69%, #0a1237 70%, #091136 73%, #0b173f 100%);
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: repeating-linear-gradient(rgba(0, 0, 0, 0.3) 0, transparent 1px, transparent 2px, rgba(0, 0, 0, 0.3) 3px);
+  pointer-events: none;
+}
+.sun {
+  position: absolute;
+  left: calc(50%);
+  top: 15%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+.name {
+  font-size: 40px;
+  font-weight: bold;
+  color: #FF073A;
+  text-align: center;
+
+}
+.audiowide {
+  font-family: 'Audiowide', cursive;
+}
+.terminal {
+  font-size: 20px;
+  color: #f9c80e;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.binary {
+  color: #FF6C11
+}
+
+.projectImage {
+  width: 50%;
+  float: left ;
+  padding-right:20px;
+
+}
+.projectDescription {
+  border: #FF073A;
+  border-style: solid;
+  color: #F9C80E;
+  font-size: 20px;
+  text-align: left;
+}
+.glow
+{
+
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+.glow a {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+.section {
+  text-align:center;
+  font-size: 3em;
+}
+#callbacks-placeholder{
+  position:fixed;top:50px;left:50px;color:black;z-index:999;
+}
+
+
+/* Terminal */
+
+
+.control span{
+  cursor: pointer;
+}
+
+.hidden{
+  visibility: hidden;
+}
