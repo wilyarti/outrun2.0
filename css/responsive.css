@@ -1,0 +1,101 @@
+/* Default rules */
+@media screen and (max-width: 1200px) {
+  .header {
+    font-size: 70px;
+  }
+
+  .resume {
+    font-size: 35px;
+
+  }
+
+  .terminal {
+    font-size: 55px;
+  }
+
+  .projectDescription {
+    font-size: 35px;
+  }
+
+  .section {
+  }
+
+  #menu {
+    height: 40px;
+    font-size: 35px;
+  }
+
+  #menu li.active a {
+    padding: 9px 0px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .header {
+    font-size: 35px;
+  }
+
+  .resume {
+    font-size: 25px;
+
+  }
+
+  .terminal {
+    font-size: 35px;
+  }
+
+  .projectDescription {
+    font-size: 30px;
+
+  }
+
+  #menu {
+    height: 40px;
+    font-size: 25px;
+  }
+
+  #menu li.active a {
+    padding: 9px 0px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  #menu {
+    visibility: hidden;
+  }
+  .terminal {
+    font-size: 30px;
+  }
+  .outrun-table {
+    visibility: hidden;
+  }
+
+  .outrun-table-message {
+    visibility: visible;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    font-size: 35px;
+  }
+
+  .resume {
+    font-size: 25px;
+
+  }
+  .terminal {
+    font-size: 28px;
+  }
+
+  .projectDescription {
+    font-size: 20px;
+
+  }
+
+  .section {
+  }
+
+  #menu {
+    visibility: hidden;
+  }
+}

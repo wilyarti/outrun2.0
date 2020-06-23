@@ -24,17 +24,18 @@
 }
 #menu li a,
 #menu li.active a{
-  padding: 9px 18px;
+  padding: 0px 0px;
   display:block;
 }
 #menu li.active a{
   color: #2DE2E6;
 }
 #menu{
+  height: 60px;
+  font-size: 45px;
   position:fixed;
   bottom:20px;
   left:0px;
-  height: 40px;
   z-index: 70;
   width: 100%;
   padding: 0;

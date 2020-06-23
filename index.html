@@ -13,6 +13,7 @@
   <link rel="stylesheet" type="text/css" href="css/fullpage.css"/>
   <link rel="stylesheet" type="text/css" href="css/menu.css"/>
   <link rel="stylesheet" type="text/css" href="css/outrun.css"/>
+  <link rel="stylesheet" type="text/css" href="css/responsive.css"/>
 
   <!-- Font -->
   <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
@@ -28,21 +29,21 @@
 <body onload="outrun()">
 <div class="overlay"></div>
 <div id="fullpage">
-  <div id="containerTerminal" class="section outrun" id="section0">
-    <img class="sun" width="200px" src="img/sun.svg"/>
-    <div>
-      <div class="audiowide name">Wilyarti Howard</div>
+  <div id="containerTerminal" class="section active outrun" id="section0">
+    <img class="sun"  src="img/sun.svg"/>
+    <div >
       <div id="terminal" class=" terminal audiowide">
+        <div class="audiowide header">Wilyarti Howard</div>
         <div class="control">
           <span class="hidden"></span>
         </div>
       </div>
     </div>
   </div>
-  <div class="section active outrun" id="section1">
+  <div class="section  outrun" id="section1">
     <div class="slide" id="slide1">
       <div class="intro">
-        <div class="audiowide name">Air Monitor</div>
+        <div class="audiowide header">Air Monitor</div>
         <img class="projectImage" src="img/project1.jpg"/>
         <div class="projectDescription audiowide">
           Air Monitor is a ESP32 micro-controller powered VOC (Volatile Organic Compound) and CO2 monitor.<p/>
@@ -53,46 +54,147 @@
     </div>
     <div class="slide active" id="slide2">
       <div class="intro">
-        <div class="audiowide name">WiFi/LoRaWAN Weather Station</div>
+        <div class="audiowide header">WiFi/LoRaWAN Weather Station</div>
         <img class="projectImage" src="img/project2.jpg"/>
         <div class="projectDescription audiowide">
-          I built several weather stations using ESP8266 and ESP32 micro-controllers.<p/>
+          I built several weather stations using ESP8266 and ESP32 micro-controllers.<p/><br/>
           Features:
           <ul>
             <li>Temperature/Humidity/Pressures</li>
             <li>Battery Voltage Monitoring</li>
             <li>Rain Measurement</li>
+            <li>UVA, UVB and UV Index</li>
           </ul>
         </div>
       </div>
     </div>
     <div class="slide" id="slide3">
       <div class="intro">
-        <div class="audiowide name">IOT Clock</div>
-        <img class="projectImage" src="img/project3.jpg"/>
+        <div class="audiowide header">IOT Clock</div>
+        <img class="projectImageHorizontal" src="img/project3.jpg"/>
         <div class="projectDescription audiowide">
-          I build a simple Dot Matrix clock which uses NTP via UDP sockets to get the time.
+          I built a simple Dot Matrix clock which uses NTP via UDP sockets to get the time.
           <p/>Built using an ESP8266. I also designed and printed the case.
         </div>
       </div>
     </div>
     <div class="slide" id="slide4">
       <div class="intro">
-        <div class="audiowide name"></div>
+        <div class="audiowide header">Air Monitor App</div>
         <img class="projectImage" src="img/project4.jpg"/>
         <div class="projectDescription audiowide">
-          I build a simple Dot Matrix clock which uses NTP via UDP sockets to get the time.
-          <p/>Built using an ESP8266. I also designed and printed the case.
+          To compliment my micro-controller based Air Monitor I created an app which connects to the Bluetooth on the device and produces 24 hour graphs.
+          <p/>
+          It runs on Android and uses React Native and Victory Graphs.
+        </div>
+      </div>
+    </div>
+    <div class="slide" id="slide5">
+      <div class="intro">
+        <div class="audiowide header">ThingSpeak Channel Grapher</div>
+        <img class="projectImage" src="img/project5.jpg"/>
+        <div class="projectDescription audiowide">
+          I built this app to connect to the ThingSpeak API and graphs fields. It can graph any field from any channel over any time period.
+
+          <p/>
+          Features:
+        <p/>
+          <br/>
+          <ul>
+            <li>Automatic field detection</li>
+            <li>Wide range of time periods</li>
+            <li>Mean Sea Level Pressure conversion</li>
+            <li>Customisable graphs</li>
+            <li>Preferences stored using cookies</li>
+            <li>Responsive design</li>
+          </ul>
+        <p/>
+          It was built using ReactJS, ChartJS, Ktor and Bootstrap.
+        </div>
+      </div>
+    </div>
+    <div class="slide" id="slide5">
+      <div class="intro">
+        <div class="audiowide header">LoRaWAN Soil Moisture Sensor</div>
+        <img class="projectImage" src="img/project6.jpg"/>
+        <div class="projectDescription audiowide">
+          Due to the high price of commercial soil moisture sensors I decided to build my own.
+          <br/>
+          It utilizes a Atmega328p micro-controller and uses a capacitive soil moisture sensor.
+          <br/>
+          Data is sent to ThingSpeak using the LoRaWAN network.
+          <p/>
+          Features:
+          <br/>
+          <ul>
+            <li>Solar/Battery Powered</li>
+            <li>Battery optimisation by powering down sensors</li>
+            <li>Temperature/Pressure</li>
+            <li>Battery Monitoring</li>
+          </ul>
         </div>
       </div>
     </div>
 
   </div>
-  <div class="section" id="section2">
+  <div class="section outrun" id="section2">
     <div class="intro">
-      <h1>Section 3</h1>
+      <div class="audiowide header">RESUME</div>
+      <br/>
+      <div class="audiowide resume">
+      I have built many open source projects in my spare time. I try to focus on projects that have a real world impact by either improving or simplifying life.
+    </div>
+      <div class="resume audiowide outrun-table-message"> Please view on a larger screen to see resume.</div>
+      <br/>
+
+      <table class="outrun-table resume audiowide">
+        <tr class="outrun-table-tr">
+          <th class="outrun-table-th">LANGUAGE</th>
+          <th class="outrun-table-th">IMPLEMENTATION</th>
+          <th class="outrun-table-th">PROJECT</th>
+        </tr>
+        <tr>
+          <td>Kotlin</td>
+          <td>Website and backends.</td>
+          <td><a href="https://www.thingiverse.com/thing:3601839">ThingSpeak Weather Station</a>, <a href="https://opens3.net">Website</a></td>
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+          <td>Websites, single page web apps, native apps</td>
+          <td><a href="https://opens3.net/channel-grapher.html">Channel Grapher</a>, <a href="https://github.com/wilyarti/AirMonitor">AirMonitor ReactNative App</a>, <a href="https://wilyarti-howard.net/blog/">Websites</a></td>
+        </tr>
+        <tr>
+          <td>C/C++</td>
+          <td>Embedded applications, microcontrollers</td>
+          <td><a href="https://www.thingiverse.com/thing:3601839">Weather Station</a>, <a href="">LoRaWan Weather Station</a>, <a href="https://www.thingiverse.com/thing:3532639">LED Clock</a></td>
+        </tr>
+        <tr>
+          <td>Golang</td>
+          <td>CLI Apps, Android App</td>
+          <td><a href="https://github.com/wilyarti/hashtree">Hashtree</a>, <a href="https://github.com/wilyarti/hashtree-mobile">Hashtree mobile</a></td>
+        </tr>
+        <tr>
+          <td>HTML/CSS</td>
+          <td>Web design</td>
+          <td><a href="https://opens3.net/channel-grapher.html">Channel Grapher</a>, <a href="https://wilyarti-howard.net/blog/">Websites</a></td>
+        </tr>
+      </table>
     </div>
   </div>
+  <div  class="section outrun" id="section3">
+    <img class="sun" width="200px" src="img/sun.svg"/>
+    <div>
+      <div class="audiowide header">Contact</div>
+      <div class=" terminal audiowide">
+        <div class="control">
+          <span class="hidden"></span>
+        </div>
+      </div>
+      <div class="audiowide resume">If you would like to contact me shoot me an email. </div>
+      <img class="email" src="img/email.png"/>
+    </div>
+  </div>
+
 </div>
 <ul id="menu" class="audiowide">
   <li data-menuanchor="who" class="active"><a href="#who">
@@ -107,6 +209,10 @@
     <span class="binary">10</span>
     Resume
   </a></li>
+  <li data-menuanchor="contact"><a href="#contact">
+    <span class="binary">11</span>
+    Contact
+  </a></li>
 </ul>
 
 <script type="text/javascript" src="js/outrun.js"></script>
@@ -114,9 +220,14 @@
 <script type="text/javascript">
   var myFullpage = new fullpage('#fullpage', {
     sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
-    anchors: ['who', 'projects', 'resume', '4thpage', 'lastPage'],
+    anchors: ['who', 'projects', 'resume', 'contact'],
     menu: '#menu',
-    lazyLoad: true
+    responsiveWidth: 900,
+    responsiveHeight: 600,
+    lazyLoad: true,
+    afterResponsive: function(isResponsive){
+        console.log("Responsive mode");
+    }
   });
 </script>
 <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->

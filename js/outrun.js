@@ -7,7 +7,7 @@ terminal.appendChild(newLine);
 
 let str = `Hey my name is Wilyarti Howard.
 I am a hobbyist web developer, programmer and gardener.
-I enjoy making things that help people in their daily life.`;
+I enjoy making things that help people in their daily lives.`;
 
 
 function sayItSlowly(str){

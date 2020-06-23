@@ -15,30 +15,36 @@
 }
 .sun {
   position: absolute;
+width: calc(50%);
   left: calc(50%);
+  max-height: calc(65%);
   top: 15%;
   text-align: center;
   transform: translate(-50%, -50%);
   white-space: nowrap;
 }
-.name {
-  font-size: 40px;
+.header {
+  font-size: 90px;
   font-weight: bold;
   color: #FF073A;
   text-align: center;
-
 }
 .audiowide {
   font-family: 'Audiowide', cursive;
 }
 .terminal {
-  font-size: 20px;
+  font-size: 65px;
   color: #f9c80e;
   text-align: left;
   padding-left: 20px;
   padding-right: 20px;
 }
-
+.resume {
+  font-size: 45px;
+  color: #F9C80E;
+  text-align: left;
+  padding: 20px;
+}
 .binary {
   color: #FF6C11
 }
@@ -46,15 +52,32 @@
 .projectImage {
   width: 50%;
   float: left ;
-  padding-right:20px;
-
+  padding: 30px;
+}
+.projectImageHorizontal {
+  width:90%;
+  float: top ;
+  padding: 30px;
 }
 .projectDescription {
-  border: #FF073A;
-  border-style: solid;
+  font-size: 45px;
   color: #F9C80E;
-  font-size: 20px;
   text-align: left;
+  padding: 20px;
+}
+.projectDescription ul {
+  display: inline-block;
+}
+
+.projectDescription li {
+  display: list-item;
+}
+.email {
+  width: calc(80%);
+  display: list-item;
+  padding-left: 20px;
+  text-align: left;
+
 }
 .glow
 {
@@ -83,7 +106,6 @@
 }
 .section {
   text-align:center;
-  font-size: 3em;
 }
 #callbacks-placeholder{
   position:fixed;top:50px;left:50px;color:black;z-index:999;
@@ -98,5 +120,51 @@
 }
 
 .hidden{
+  visibility: hidden;
+}
+
+/* Table */
+.outrun-table {
+  width: 100%;
+  top: 40%;
+  overflow-x: auto;
+  text-align: left;
+  white-space: pre-wrap;
+  color: #fff;
+}
+.outrun-table-th {
+  color: #FF6C11;
+  text-align: center;
+  border-color: #9ecaed;
+  word-wrap: break-word;
+}
+.outrun-table-tr {
+  color: #fff;
+  text-align: center;
+  border-color: #9ecaed;
+  word-wrap: break-word;
+}
+.outrun-table a {
+  color: #fff;
+  text-decoration: none;
+}
+.outrun-table a:hover {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+.outrun-table-message{
   visibility: hidden;
 }
