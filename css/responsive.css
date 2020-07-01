@@ -1,4 +1,10 @@
 /* Default rules */
+@media screen and (max-width: 2000px) {
+  .projectImage {
+    height: 80vh;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .header {
     font-size: 70px;
@@ -12,12 +18,13 @@
   .terminal {
     font-size: 55px;
   }
+  .projectImage {
+    height: auto;
+    width: 50vw;
+  }
 
   .projectDescription {
     font-size: 35px;
-  }
-
-  .section {
   }
 
   #menu {
@@ -26,9 +33,17 @@
   }
 
   #menu li.active a {
-    padding: 9px 0px;
+    padding: 0px 0px;
   }
 }
+@media screen and (max-width: 1000px) {
+  #menu {
+    height: 40px;
+    font-size: 35px;
+  }
+
+}
+
 @media screen and (max-width: 900px) {
   .header {
     font-size: 35px;
@@ -62,9 +77,11 @@
   #menu {
     visibility: hidden;
   }
+
   .terminal {
     font-size: 30px;
   }
+
   .outrun-table {
     visibility: hidden;
   }
@@ -83,6 +100,7 @@
     font-size: 25px;
 
   }
+
   .terminal {
     font-size: 28px;
   }

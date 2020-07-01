@@ -17,17 +17,22 @@
   position: absolute;
 width: calc(50%);
   left: calc(50%);
-  max-height: calc(65%);
+  max-height: calc(50%);
   top: 15%;
   text-align: center;
   transform: translate(-50%, -50%);
   white-space: nowrap;
 }
+.belowSun {
+  position: absolute;
+  bottom: 10%;
+}
 .header {
-  font-size: 90px;
+  font-size: 75px;
   font-weight: bold;
   color: #FF073A;
   text-align: center;
+  z-index: 9999;
 }
 .audiowide {
   font-family: 'Audiowide', cursive;
@@ -40,27 +45,29 @@ width: calc(50%);
   padding-right: 20px;
 }
 .resume {
-  font-size: 45px;
+  font-size: 40px;
   color: #F9C80E;
   text-align: left;
   padding: 20px;
+  z-index: 9999;
 }
 .binary {
   color: #FF6C11
 }
 
 .projectImage {
-  width: 50%;
-  float: left ;
+  height: 70vh;
+  float: left;
   padding: 30px;
+  display: inline-block;
 }
 .projectImageHorizontal {
-  width:90%;
+  max-width:90%;
   float: top ;
   padding: 30px;
 }
 .projectDescription {
-  font-size: 45px;
+  font-size: 35px;
   color: #F9C80E;
   text-align: left;
   padding: 20px;
@@ -73,7 +80,6 @@ width: calc(50%);
   display: list-item;
 }
 .email {
-  width: calc(80%);
   display: list-item;
   padding-left: 20px;
   text-align: left;

@@ -14,6 +14,8 @@
   <link rel="stylesheet" type="text/css" href="css/menu.css"/>
   <link rel="stylesheet" type="text/css" href="css/outrun.css"/>
   <link rel="stylesheet" type="text/css" href="css/responsive.css"/>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+
 
   <!-- Font -->
   <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
@@ -31,13 +33,13 @@
 <div id="fullpage">
   <div id="containerTerminal" class="section active outrun" id="section0">
     <img class="sun"  src="img/sun.svg"/>
-    <div >
-      <div id="terminal" class=" terminal audiowide">
-        <div class="audiowide header">Wilyarti Howard</div>
-        <div class="control">
-          <span class="hidden"></span>
-        </div>
+
+    <div class="belowSun">
+      <div class="audiowide header">Wilyarti Howard</div>      <div id="terminal" class=" terminal audiowide">
+      <div class="control">
+        <span class="hidden"></span>
       </div>
+    </div>
     </div>
   </div>
   <div class="section  outrun" id="section1">
@@ -57,7 +59,7 @@
         <div class="audiowide header">WiFi/LoRaWAN Weather Station</div>
         <img class="projectImage" src="img/project2.jpg"/>
         <div class="projectDescription audiowide">
-          I built several weather stations using ESP8266 and ESP32 micro-controllers.<p/><br/>
+          I built several weather stations using ESP8266 and ESP32 micro-controllers.<p/>
           Features:
           <ul>
             <li>Temperature/Humidity/Pressures</li>
@@ -96,9 +98,8 @@
         <div class="projectDescription audiowide">
           I built this app to connect to the ThingSpeak API and graphs fields. It can graph any field from any channel over any time period.
 
-          <p/>
+          <br/>
           Features:
-        <p/>
           <br/>
           <ul>
             <li>Automatic field detection</li>
@@ -108,7 +109,7 @@
             <li>Preferences stored using cookies</li>
             <li>Responsive design</li>
           </ul>
-        <p/>
+          <p/>
           It was built using ReactJS, ChartJS, Ktor and Bootstrap.
         </div>
       </div>
@@ -123,7 +124,6 @@
           It utilizes a Atmega328p micro-controller and uses a capacitive soil moisture sensor.
           <br/>
           Data is sent to ThingSpeak using the LoRaWAN network.
-          <p/>
           Features:
           <br/>
           <ul>
@@ -142,8 +142,8 @@
       <div class="audiowide header">RESUME</div>
       <br/>
       <div class="audiowide resume">
-      I have built many open source projects in my spare time. I try to focus on projects that have a real world impact by either improving or simplifying life.
-    </div>
+        I have built many open source projects in my spare time. I try to focus on projects that have a real world impact by either improving or simplifying life.
+      </div>
       <div class="resume audiowide outrun-table-message"> Please view on a larger screen to see resume.</div>
       <br/>
 
@@ -182,16 +182,12 @@
     </div>
   </div>
   <div  class="section outrun" id="section3">
-    <img class="sun" width="200px" src="img/sun.svg"/>
+    <!-- <img class="sun" width="200px" src="img/sun.svg"/> -->
     <div>
       <div class="audiowide header">Contact</div>
-      <div class=" terminal audiowide">
-        <div class="control">
-          <span class="hidden"></span>
-        </div>
-      </div>
-      <div class="audiowide resume">If you would like to contact me shoot me an email. </div>
-      <img class="email" src="img/email.png"/>
+      <img class="" src="img/profile.jpg"/>
+      <br/>
+      <a href="contact.html" class="audiowide resume">You can contact me here.</a>
     </div>
   </div>
 
@@ -217,6 +213,7 @@
 
 <script type="text/javascript" src="js/outrun.js"></script>
 <script type="text/javascript" src="js/fullpage.js"></script>
+
 <script type="text/javascript">
   var myFullpage = new fullpage('#fullpage', {
     sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
@@ -226,7 +223,7 @@
     responsiveHeight: 600,
     lazyLoad: true,
     afterResponsive: function(isResponsive){
-        console.log("Responsive mode");
+      console.log("Responsive mode");
     }
   });
 </script>

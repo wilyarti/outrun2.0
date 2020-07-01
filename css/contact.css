@@ -1,0 +1,58 @@
+body {
+  background: #070829;
+  background: linear-gradient(#070829 0%, #05092b 24%, #08092b 25%, #08092d 30%, #050a2b 32%, #070a2e 35%, #080e31 56%, #090f35 62%, #080f32 63%, #0b1036 64%, #0b0f36 69%, #0a1237 70%, #091136 73%, #0b173f 100%);
+  font-size: calc(5vw, 30px);
+  text-align: left;
+  padding: 20px;
+  z-index: 9999;
+  color: #FFF;
+
+}
+.container-fluid {
+  height: 100%;
+}
+body h1 {
+  font-size: 75px;
+  font-weight: bold;
+  color: #FF073A;
+  text-align: center;
+}
+
+body p {
+  color: #F9C80E;
+
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: repeating-linear-gradient(rgba(0, 0, 0, 0.3) 0, transparent 1px, transparent 2px, rgba(0, 0, 0, 0.3) 3px);
+  pointer-events: none;
+}
+
+.form-control {
+  background-color: #f9c80e;
+  color: #FFF;
+}
+.btn-success {
+  background-color: #FF073A;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  border: solid 1px #fff;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #F9C80E;
+}
