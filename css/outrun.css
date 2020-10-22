@@ -17,7 +17,7 @@
   position: absolute;
 width: calc(50%);
   left: calc(50%);
-  max-height: calc(50%);
+  max-height: calc(30%);
   top: 15%;
   text-align: center;
   transform: translate(-50%, -50%);
@@ -28,7 +28,6 @@ width: calc(50%);
   bottom: 10%;
 }
 .header {
-  font-size: 75px;
   font-weight: bold;
   color: #FF073A;
   text-align: center;
@@ -38,14 +37,12 @@ width: calc(50%);
   font-family: 'Audiowide', cursive;
 }
 .terminal {
-  font-size: 65px;
   color: #f9c80e;
   text-align: left;
   padding-left: 20px;
   padding-right: 20px;
 }
 .resume {
-  font-size: 40px;
   color: #F9C80E;
   text-align: left;
   padding: 20px;
@@ -56,7 +53,7 @@ width: calc(50%);
 }
 
 .projectImage {
-  height: 70vh;
+  height: 60vh;
   float: left;
   padding: 30px;
   display: inline-block;
@@ -67,7 +64,6 @@ width: calc(50%);
   padding: 30px;
 }
 .projectDescription {
-  font-size: 35px;
   color: #F9C80E;
   text-align: left;
   padding: 20px;
@@ -173,4 +169,38 @@ width: calc(50%);
 }
 .outrun-table-message{
   visibility: hidden;
+}
+.banner {
+  display: none;
+}
+.fade-in {
+  animation: fadeIn ease 20s;
+  -webkit-animation: fadeIn ease 20s;
+  -moz-animation: fadeIn ease 20s;
+  -o-animation: fadeIn ease 20s;
+  -ms-animation: fadeIn ease 20s;
+}
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
 }

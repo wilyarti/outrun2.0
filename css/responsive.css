@@ -1,13 +1,38 @@
 /* Default rules */
-@media screen and (max-width: 2000px) {
+@media screen and (min-width: 2000px) {
+  .header {
+    font-size: 75px;
+  }
+
+  .resume {
+    font-size: 45px;
+
+  }
+
+  .terminal {
+    font-size: 45px;
+  }
   .projectImage {
-    height: 80vh;
+    height-max: 80vm;
+  }
+
+  .projectDescription {
+    font-size: 25px;
+  }
+
+  #menu {
+    height: 40px;
+    font-size: 35px;
+  }
+
+  #menu li.active a {
+    padding: 0px 0px;
   }
 }
-
-@media screen and (max-width: 1200px) {
+/* Default rules */
+@media screen and (max-width: 2000px) {
   .header {
-    font-size: 70px;
+    font-size: 75px;
   }
 
   .resume {
@@ -16,11 +41,10 @@
   }
 
   .terminal {
-    font-size: 55px;
+    font-size: 35px;
   }
   .projectImage {
-    height: auto;
-    width: 50vw;
+    height-max: 80vm;
   }
 
   .projectDescription {
@@ -36,10 +60,42 @@
     padding: 0px 0px;
   }
 }
-@media screen and (max-width: 1000px) {
+
+@media screen and (max-width: 1200px) {
+  .header {
+    font-size: 55px;
+  }
+
+  .resume {
+    font-size: 25px;
+
+  }
+
+  .terminal {
+    font-size: 25px;
+  }
+  .projectImage {
+    height-max: 80vm;
+  }
+
+  .projectDescription {
+    font-size: 25px;
+  }
+
   #menu {
     height: 40px;
     font-size: 35px;
+  }
+
+  #menu li.active a {
+    padding: 9px 0px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #menu {
+    height: 40px;
+    font-size: 25px;
   }
 
 }
@@ -55,39 +111,40 @@
   }
 
   .terminal {
-    font-size: 35px;
+    font-size: 20px;
   }
 
   .projectDescription {
-    font-size: 30px;
+    font-size: 20px;
 
   }
+  .projectImage {
+     height-max: 80vm;
+   }
 
   #menu {
-    height: 40px;
-    font-size: 25px;
-  }
-
-  #menu li.active a {
-    padding: 9px 0px;
+    display: none;
   }
 }
 
 @media screen and (max-width: 660px) {
   #menu {
-    visibility: hidden;
+    display: none;
   }
 
   .terminal {
-    font-size: 30px;
+    font-size: 16px;
   }
 
   .outrun-table {
-    visibility: hidden;
+display: none;
   }
 
   .outrun-table-message {
-    visibility: visible;
+    display: none;
+  }
+  #menu {
+    display: none;
   }
 }
 
@@ -112,8 +169,11 @@
 
   .section {
   }
+  .outrun-table {
+    dispaly: none;
+  }
 
   #menu {
-    visibility: hidden;
+    display: none;
   }
 }

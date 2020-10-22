@@ -23,12 +23,7 @@ function sayItSlowly(str){
 
     if (counter === arr.length) {
       clearInterval(interval);
-      //skipBtn.textContent = "End.";
-      skipBtn.classList.remove("hidden");
-      skipBtn.addEventListener("click", () => {
-        newLine.textContent = ""
-        sayItSlowly(user, place, str)
-      })
+      showBanner();
     }
 
     if (terminal.clientHeight > (terminalBody.clientHeight/2)) {
@@ -57,5 +52,11 @@ function printChar(char){
 }
 function outrun() {
   sayItSlowly( str);
+}
 
+function showBanner() {
+  let banner = document.getElementById('banner');
+  banner.classList.remove("banner");
+  banner.classList.add("fade-in");
+  console.log("Done")
 }
