@@ -62,7 +62,7 @@ try {
   foreach ($_POST as $key => $value) {
     // If the field exists in the $fields array, include it in the email
     if (isset($fields[$key])) {
-      $emailText .= "$fields[$key]: $value\n";
+      $emailText .= "<b>$fields[$key]:</b> $value<br/>";
     }
   }
   // Send email
